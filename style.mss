@@ -1,16 +1,4 @@
-Map {
-  background-color: #b8dee6;
-}
-
-#countries {
-  ::outline {
-    line-color: #85c5d3;
-    line-width: 2;
-    line-join: round;
-  } 
-  polygon-fill: #fff;
-}
-
+//Montana cadastral map for Flybox
 #mtcadastral {
   line-color:black;
   line-width:0.5;
@@ -30,7 +18,10 @@ Map {
 //BLM is yellow  
 [OwnerType = 'Bureau of Land Management']{
 	polygon-fill:#FFE583;}
-[zoom > 10] {
+/*
+  Not useable at the moment because the data includes mainly large 
+  chuncks of shapes, not small enough to label well
+  [zoom > 10] {
   text-name:[OwnerType];
   text-face-name: 'Helvetica Regular';
   text-dx: 5;
@@ -53,4 +44,5 @@ Map {
   line-color:black;
   line-width:0.1;
   }
+  */
 }
